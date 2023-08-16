@@ -3,40 +3,28 @@ name: verify
 on:
   push:
     branches:
-    - main
-  pull_request:
+      - main
 
 jobs:
   verify:
     runs-on: ubuntu-latest
 
+    permissions:
+      contents: write
+
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v1
 
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v1
 
     - name: Install dependencies
-      run: pip3 install -U git+https://github.com/${{ github.repository }}.git@main
-
-    - name: Set up Rust (1.42.0)
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: 1.42.0-x86_64-unknown-linux-gnu
-        default: true
-        profile: minimal
-
-    # required by cargo-udeps
-    - name: Set up Rust (nightly)
-      uses: actions-rs/toolchain@v1
-      with:
-        toolchain: nightly-x86_64-unknown-linux-gnu
-        default: true
-        profile: minimal
+      run: pip3 install -U git+https://github.com/mono-0812/atc-libraries.git
 
     - name: Run tests
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        DROPBOX_TOKEN: ${{ secrets.DROPBOX_TOKEN }}
         YUKICODER_TOKEN: ${{ secrets.YUKICODER_TOKEN }}
         GH_PAT: ${{ secrets.GH_PAT }}
       run: oj-verify all
