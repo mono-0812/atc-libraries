@@ -1,6 +1,9 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind
 
 from src.unionfind import unionfind
+import sys
+
+sys.setrecursionlimit(900000)
 
 N,Q=map(int,input().split())
 uf=unionfind(N)
