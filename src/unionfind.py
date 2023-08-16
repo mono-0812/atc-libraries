@@ -10,6 +10,7 @@ class unionfind():
         return self.parents[x]
     
     def union(self,x,y):
+        if x==y:return
         x=self.find(x)
         y=self.find(y)
         if self.size(x)<self.size(y):
