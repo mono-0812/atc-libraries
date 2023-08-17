@@ -1,17 +1,16 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/point_add_range_sum
 
-from src.fenwicktree import fenwicktree
+from src.segmenttree import segmenttree
 
 N,Q=map(int,input().split())
-ft=fenwicktree(N)
 a=list(map(int,input().split()))
-
-for i in range(N):
-    ft.add(i,a[i])
+seg=segmenttree(a,0,lambda x,y:x+y)
 
 for i in range(Q):
     query=list(map(int,input().split()))
     if query[0]==0:
-        ft.add(query[1],query[2])
+        seg.add(query[1],query[2])
     else:
-        print(ft.query(query[1],query[2]))
+        print(seg.query(query[1],query[2]))
+        
+

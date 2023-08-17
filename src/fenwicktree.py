@@ -21,7 +21,7 @@ class fenwicktree():
         return res
     
     #[l,r)の和 0-indexed
-    def sum(self,l,r):
+    def query(self,l,r):
         l+=1
         return self._sum(r)-self._sum(l-1)
     
