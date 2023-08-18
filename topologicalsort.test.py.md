@@ -1,14 +1,14 @@
 ---
 data:
   _extendedDependsOn:
-  - icon: ':x:'
+  - icon: ':heavy_check_mark:'
     path: src/topologicalsort.py
     title: src/topologicalsort.py
   _extendedRequiredBy: []
   _extendedVerifiedWith: []
-  _isVerificationFailed: true
+  _isVerificationFailed: false
   _pathExtension: py
-  _verificationStatusIcon: ':x:'
+  _verificationStatusIcon: ':heavy_check_mark:'
   attributes:
     PROBLEM: http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_4_A
     links:
@@ -29,8 +29,8 @@ data:
   isVerificationFile: true
   path: topologicalsort.test.py
   requiredBy: []
-  timestamp: '2023-08-18 15:11:03+09:00'
-  verificationStatus: TEST_WRONG_ANSWER
+  timestamp: '2023-08-18 15:17:47+09:00'
+  verificationStatus: TEST_ACCEPTED
   verifiedWith: []
 documentation_of: topologicalsort.test.py
 layout: document

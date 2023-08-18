@@ -12,7 +12,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/segmenttree.py
       title: src/segmenttree.py
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: src/topologicalsort.py
       title: src/topologicalsort.py
     - icon: ':heavy_check_mark:'
@@ -30,7 +30,7 @@ data:
     - icon: ':heavy_check_mark:'
       path: segmenttree.test.py
       title: segmenttree.test.py
-    - icon: ':x:'
+    - icon: ':heavy_check_mark:'
       path: topologicalsort.test.py
       title: topologicalsort.test.py
     - icon: ':heavy_check_mark:'
