@@ -22,13 +22,14 @@ data:
   code: "# verification-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_4_B\n\
     \nfrom src.topologicalsort import topologicalsort\n\nV,E=map(int,input().split())\n\
     path=[[] for i in range(V)]\n\nfor i in range(E):\n    u,v=map(int,input().split())\n\
-    \    path[u].append(v)\n\nprint(*topologicalsort(path))\n        \n\n"
+    \    path[u].append(v)\n\nfor i in topologicalsort(path):\n    print(i)\n    \
+    \    \n\n"
   dependsOn:
   - src/topologicalsort.py
   isVerificationFile: true
   path: topologicalsort.test.py
   requiredBy: []
-  timestamp: '2023-08-18 15:01:52+09:00'
+  timestamp: '2023-08-18 15:04:59+09:00'
   verificationStatus: TEST_WRONG_ANSWER
   verifiedWith: []
 documentation_of: topologicalsort.test.py
