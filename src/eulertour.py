@@ -28,7 +28,4 @@ class eulertour():
     def lca(self,u,v):
         if self.in_index[u]>self.in_index[v]:
             u,v=v,u
-        try:
-            return self.seg.query(self.in_index[u],self.in_index[v]+1)[1]
-        except:
-            print(self.in_index[u],self.in_index[v]+1)
+        return self.seg.query(self.in_index[u],self.in_index[v]+1)[1]
