@@ -1,4 +1,4 @@
-# verification-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_4_B
+# verification-helper: PROBLEM http://judge.u-aizu.ac.jp/onlinejudge/description.jsp?id=GRL_4_A
 
 from src.topologicalsort import topologicalsort
 
@@ -9,7 +9,8 @@ for i in range(E):
     u,v=map(int,input().split())
     path[u].append(v)
 
-for i in topologicalsort(path):
-    print(i)
+print(int(len(topologicalsort(path))==0))
+
+    
         
 
