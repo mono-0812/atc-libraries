@@ -12,6 +12,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: src/segmenttree.py
       title: src/segmenttree.py
+    - icon: ':x:'
+      path: src/topologicalsort.py
+      title: src/topologicalsort.py
     - icon: ':heavy_check_mark:'
       path: src/unionfind.py
       title: src/unionfind.py
@@ -27,6 +30,9 @@ data:
     - icon: ':heavy_check_mark:'
       path: segmenttree.test.py
       title: segmenttree.test.py
+    - icon: ':x:'
+      path: topologicalsort.test.py
+      title: topologicalsort.test.py
     - icon: ':heavy_check_mark:'
       path: unionfind.test.py
       title: unionfind.test.py
