@@ -4,6 +4,9 @@ data:
   - name: src
     pages:
     - icon: ':heavy_check_mark:'
+      path: src/eulertour.py
+      title: src/eulertour.py
+    - icon: ':heavy_check_mark:'
       path: src/fenwicktree.py
       title: src/fenwicktree.py
     - icon: ':heavy_check_mark:'
@@ -15,6 +18,9 @@ data:
   verificationCategories:
   - name: .
     pages:
+    - icon: ':heavy_check_mark:'
+      path: eulertour.test.py
+      title: eulertour.test.py
     - icon: ':heavy_check_mark:'
       path: fenwicktree.test.py
       title: fenwicktree.test.py
