@@ -9,6 +9,7 @@ for i in range(E):
     u,v=map(int,input().split())
     path[u].append(v)
 
-print(*topologicalsort(path))
+for i in topologicalsort(path):
+    print(i)
         
 
